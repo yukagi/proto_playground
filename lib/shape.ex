@@ -1,4 +1,4 @@
-defmodule ProtoPlayground.Shapes.Shape do
+defmodule ProtoPlayground.Shape do
   alias ProtoPlayground.Shapes.Circle
   alias ProtoPlayground.Shapes.Rectangle
   alias ProtoPlayground.Shapes.Square

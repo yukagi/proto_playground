@@ -1,9 +1,9 @@
 defmodule ProtoPlayground.Shapes.ShapeTest do
   use ExUnit.Case
 
+  alias ProtoPlayground.Shape
   alias ProtoPlayground.Shapes.Circle
   alias ProtoPlayground.Shapes.Rectangle
-  alias ProtoPlayground.Shapes.Shape
   alias ProtoPlayground.Shapes.Square
 
   describe "perimeter/1 given a circle" do
