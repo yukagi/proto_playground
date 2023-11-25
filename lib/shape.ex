@@ -1,29 +1,11 @@
 defmodule ProtoPlayground.Shape do
-  alias ProtoPlayground.Shapes.Circle
-  alias ProtoPlayground.Shapes.Rectangle
-  alias ProtoPlayground.Shapes.Square
+  alias ProtoPlayground.Shapeable
 
-  def perimeter(%Circle{} = circle) do
-    Circle.perimeter(circle)
+  def perimeter(shape) do
+    Shapeable.perimeter(shape)
   end
 
-  def perimeter(%Rectangle{} = rectangle) do
-    Rectangle.perimeter(rectangle)
-  end
-
-  def perimeter(%Square{} = square) do
-    Square.perimeter(square)
-  end
-
-  def area(%Circle{} = circle) do
-    Circle.area(circle)
-  end
-
-  def area(%Rectangle{} = rectangle) do
-    Rectangle.area(rectangle)
-  end
-
-  def area(%Square{} = square) do
-    Square.area(square)
+  def area(shape) do
+    Shapeable.area(shape)
   end
 end

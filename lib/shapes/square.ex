@@ -9,6 +9,10 @@ defmodule ProtoPlayground.Shapes.Square do
   def new(number) do
     %Square{sides: number}
   end
+end
+
+defimpl ProtoPlayground.Shapeable, for: ProtoPlayground.Shapes.Square do
+  alias ProtoPlayground.Shapes.Square
 
   @spec perimeter(Square.t()) :: non_neg_integer()
   def perimeter(%Square{sides: sides}) do

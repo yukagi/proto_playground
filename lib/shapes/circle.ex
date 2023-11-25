@@ -9,6 +9,10 @@ defmodule ProtoPlayground.Shapes.Circle do
   def new(radius) do
     %Circle{radius: radius}
   end
+end
+
+defimpl ProtoPlayground.Shapeable, for: ProtoPlayground.Shapes.Circle do
+  alias ProtoPlayground.Shapes.Circle
 
   @spec perimeter(Circle.t()) :: number()
   def perimeter(%Circle{radius: radius}) do

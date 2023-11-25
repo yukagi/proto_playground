@@ -9,6 +9,10 @@ defmodule ProtoPlayground.Shapes.Rectangle do
   def new(length, width) do
     %Rectangle{length: length, width: width}
   end
+end
+
+defimpl ProtoPlayground.Shapeable, for: ProtoPlayground.Shapes.Rectangle do
+  alias ProtoPlayground.Shapes.Rectangle
 
   @spec perimeter(Rectangle.t()) :: non_neg_integer()
   def perimeter(%Rectangle{length: length, width: width}) do
